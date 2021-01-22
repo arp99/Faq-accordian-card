@@ -107,6 +107,8 @@ h2:hover{
     transform: rotate(180deg);
 }
 .arrow{
+    width: 10px;
+    height: 8px;
     transition: 0.4s;
 }
 hr{
@@ -120,7 +122,7 @@ hr{
     }
 } 
 
-@media only screen and (min-width: 501px){
+@media only screen and (min-width: 1250px){
     main{
         height: 100vh;
     }
@@ -141,12 +143,15 @@ hr{
         padding-right: 5rem;
     }
     #desktop_images{
-        width: 60%;
-        height: 100%;
+        width: 60vh;
+        min-height: 60vh;
         position: relative;
     }
     #woman_desktop{
+        position: absolute;
         transform: translateX(-18%);
+        width: 95%;
+        top: 22%;
         z-index: 6;
     }
     #desktop_pattern{
@@ -154,7 +159,7 @@ hr{
         top: 0;
         left: 0;
         z-index: -1;
-        transform: scale(0.8) translate(-60% , -40%)
+        transform: scale(0.8) translate(-70% , -40%)
     }
     .box{
         position: absolute;
